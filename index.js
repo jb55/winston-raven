@@ -1,14 +1,12 @@
 var util = require('util'),
-    raven = require('raven'),
-    winston = require('winston')
+    winston = require('winston'),
     _ = require('underscore');
 
 var Sentry = winston.transports.SentryLogger = function (options) {
-
   this.name = 'Sentry';
   this._dsn = options.dsn || '';
   this._patchGlobal = options.patchGlobal || false;
-  this._sentry = new raven.Client(this._dsn);
+  this._sentry = options.raven;
   this._logger = options.logger || 'root';
 
   if(this.patchGlobal) {

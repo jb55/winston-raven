@@ -1,25 +1,20 @@
 {
-  "name": "winston-sentry",
+  "name": "winston-raven",
   "version": "0.0.5",
-  "description": "Sentry transport for the winston logger.",
-  "main": "sentry-transport.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Raven transport for the winston logger.",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/guzru/winston-sentry.git"
+    "url": "https://github.com/jb55/winston-raven.git"
   },
-  "dependencies": {
-    "raven": "~0.5.4",
-    "underscore": "1.4.2"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "winston": ">= 0.7.0"
   },
   "keywords": [
     "node",
     "sentry",
+    "raven",
     "javascript",
     "logger",
     "winston"
